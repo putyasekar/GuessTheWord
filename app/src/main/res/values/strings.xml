@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Guess The Word</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="ready">Get ready to</string>
+    <string name="guess">guess the word!</string>
+    <string name="play">Play</string>
+    <string name="word">The word is...</string>
+    <string name="hasil">jelly</string>
+    <string name="got">got it</string>
+    <string name="angka">0</string>
+    <string name="skip">SKIP</string>
+    <string name="endgame">END GAME</string>
+    <string name="go">GOT IT</string>
+    <string name="yourscore">Your Scored</string>
+    <string name="hasilangka">40</string>
+    <string name="playagain">play again</string>
+</resources>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/opening_destination">
+
+    <fragment
+        android:id="@+id/opening_destination"
+        android:name="com.diki.idn.guesstheword.opening.OpeningFragment"
+        android:label="OpeningFragment"
+        tools:layout="@layout/fragment_opening">
+        <action
+            android:id="@+id/action_opening_destination_to_game_destination2"
+            app:destination="@id/game_destination"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+    </fragment>
+    <fragment
+        android:id="@+id/game_destination"
+        android:name="com.diki.idn.guesstheword.game.GameFragment"
+        android:label="GameFragment"
+        tools:layout="@layout/fragment_game">
+        <action
+            android:id="@+id/action_game_destination_to_score_destination"
+            app:destination="@id/score_destination" />
+    </fragment>
+    <fragment
+        android:id="@+id/score_destination"
+        android:name="com.diki.idn.guesstheword.score.ScoreFragment"
+        android:label="fragment_score"
+        tools:layout="@layout/fragment_score">
+        <action
+            android:id="@+id/action_score_destination_to_game_destination"
+            app:destination="@id/game_destination" />
+        <argument
+            android:name="score"
+            android:defaultValue="0"
+            app:argType="integer" />
+    </fragment>
+</navigation>
